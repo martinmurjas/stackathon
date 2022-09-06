@@ -1,0 +1,8 @@
+.p5Canvas {
+  border: solid 1px black;
+}
+
+.react-p5 {
+  display: flex;
+  justify-content: center;
+}

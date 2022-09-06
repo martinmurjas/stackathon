@@ -1,0 +1,16 @@
+#NavBar,
+#NavBar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#NavBar h1 {
+  margin: 0.5rem;
+}
+
+#NavBar nav > * {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
