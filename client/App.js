@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavbarOrig from "./components/NavbarOrig";
+// import NavbarOrig from "./components/NavbarOrig";
 import Routes from "./Routes";
 import NavBar from "./components/NavBar";
 import Canvas from "./components/Canvas";

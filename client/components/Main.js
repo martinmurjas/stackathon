@@ -1,13 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 // import * as posedetection from "@tensorflow-models/pose-detection";
 // import { params } from "../params";
 import { createDetector, createCamera } from "../store";
+import UploadVideo from "./Steps/UploadVideo";
+import SelectStartTime from "./Steps/SelectStartTime";
+import SelectEndTime from "./Steps/SelectEndTime";
+import RunAnalysis from "./Steps/RunAnalysis";
 
 import Canvas from "./Canvas";
 import VideoControls from "./VideoControls";
 
 const Main = ({ video, canvas, createDetector, createCamera }) => {
+  const [step, setStep] = useState(1);
+
+  console.log(step);
+
   useEffect(() => {
     createDetector();
   }, []);
@@ -24,6 +32,10 @@ const Main = ({ video, canvas, createDetector, createCamera }) => {
 
   return (
     <div>
+      {step === 1 ? <UploadVideo step={step} setStep={setStep} /> : null}
+      {step === 2 ? <SelectStartTime step={step} setStep={setStep} /> : null}
+      {step === 3 ? <SelectEndTime step={step} setStep={setStep} /> : null}
+      {step === 4 ? <RunAnalysis step={step} setStep={setStep} /> : null}
       <VideoControls />
       <Canvas />
     </div>

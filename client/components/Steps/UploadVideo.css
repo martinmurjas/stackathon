@@ -1,0 +1,33 @@
+#UploadVideo label {
+  background-color: #e6f7ff;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#UploadVideo label > div {
+  /* justify-content: space-around; */
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+#UploadVideo label > svg {
+  flex-grow: 0;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  color: red;
+}
+
+#UploadVideo path {
+  fill: black;
+}
+
+#UploadVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

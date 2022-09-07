@@ -37,9 +37,18 @@ const Canvas = (props) => {
 
   return (
     <div id="canvas-wrapper">
-      <h1>Canvas</h1>
-      <canvas id="output" ref={canvasElem}></canvas>
-      <video id="video" ref={videoElem} controls loop>
+      <canvas
+        id="output"
+        ref={canvasElem}
+        style={{ visibility: "hidden" }}
+      ></canvas>
+      <video
+        id="video"
+        ref={videoElem}
+        controls
+        loop
+        style={{ visibility: "hidden" }}
+      >
         <source id="currentVID" src="" type="video/mp4" ref={currentVideoSrc} />
       </video>
     </div>
