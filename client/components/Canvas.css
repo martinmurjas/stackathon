@@ -9,6 +9,7 @@
 
 #canvas-wrapper {
   position: relative;
+  /* display: flex; */
 }
 
 #output {

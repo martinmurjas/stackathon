@@ -2,15 +2,17 @@ import React from "react";
 
 // import NavbarOrig from "./components/NavbarOrig";
 import Routes from "./Routes";
-import NavBar from "./components/NavBar";
 import Canvas from "./components/Canvas";
-import VideoControls from "./components/VideoControls";
 import Main from "./components/Main";
+import WelcomePage from "./components/WelcomePage";
+import background from "../public/backgroundWebOptimized.jpg";
+import "./App.css";
 
 const App = () => {
+  console.log(background);
   return (
     <div>
-      <NavBar />
+      <WelcomePage />
       <Main />
     </div>
     // <div>

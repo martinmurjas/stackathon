@@ -4,10 +4,24 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  box-sizing: border-box;
+  /* font-family: "Lobster", cursive; */
+}
+
+#NavBar {
+  padding: 0.5rem;
 }
 
 #NavBar h1 {
   margin: 0.5rem;
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+#NavBar h3 {
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 
 #NavBar nav > * {

@@ -21,13 +21,16 @@ export class Camera {
       this.video,
       0,
       0,
-      this.video.videoWidth,
-      this.video.videoHeight
+      // this.video.videoWidth,
+      // this.video.videoHeight
+      params.width,
+      params.height
     );
   }
 
   clearCtx() {
-    this.ctx.clearRect(0, 0, this.video.videoWidth, this.video.videoHeight);
+    // this.ctx.clearRect(0, 0, this.video.videoWidth, this.video.videoHeight);
+    this.ctx.clearRect(0, 0, params.width, params.height);
   }
 
   /**
@@ -83,7 +86,13 @@ export class Camera {
 
     if (score >= scoreThreshold) {
       const circle = new Path2D();
-      circle.arc(keypoint.x, keypoint.y, params.radius, 0, 2 * Math.PI);
+      circle.arc(
+        params.xAdjustment * keypoint.x,
+        params.yAdjustment * keypoint.y,
+        params.radius,
+        0,
+        2 * Math.PI
+      );
       this.ctx.fill(circle);
       this.ctx.stroke(circle);
     }
@@ -109,8 +118,8 @@ export class Camera {
 
       if (score1 >= scoreThreshold && score2 >= scoreThreshold) {
         this.ctx.beginPath();
-        this.ctx.moveTo(kp1.x, kp1.y);
-        this.ctx.lineTo(kp2.x, kp2.y);
+        this.ctx.moveTo(params.xAdjustment * kp1.x, params.yAdjustment * kp1.y);
+        this.ctx.lineTo(params.xAdjustment * kp2.x, params.yAdjustment * kp2.y);
         this.ctx.stroke();
       }
     });

@@ -1,0 +1,20 @@
+#Main {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  position: relative;
+}
+
+#Main > div {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85vh;
+  /* background-color: red; */
+  justify-content: space-between;
+  align-items: center;
+}

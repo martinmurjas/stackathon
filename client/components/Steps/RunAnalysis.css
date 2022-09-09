@@ -1,0 +1,113 @@
+#RunAnalysis > h1 > span {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+#RunAnalysis > h1 {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#RunAnalysis .buttonImage {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+#RunAnalysis .buttonImage:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+#RunAnalysis .buttonImage img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+#RunAnalysis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonImage h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a70a10;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1rem;
+}
+
+#RunAnalysis .analysisLoading {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+  position: relative;
+}
+
+#RunAnalysis .analysisLoading img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.analysisLoading h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a70a10;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1rem;
+}
+
+#RunAnalysis .analysisCompleted {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+  position: relative;
+}
+
+#RunAnalysis .analysisCompleted img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+  transition: all 1s;
+}
+
+.analysisCompleted h3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a70a10;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}

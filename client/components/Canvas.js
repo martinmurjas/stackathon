@@ -36,7 +36,10 @@ const Canvas = (props) => {
   }, [currentVideoSrc]);
 
   return (
-    <div id="canvas-wrapper">
+    <div
+      id="canvas-wrapper"
+      style={{ visibility: props.step > 1 ? "visible" : "hidden" }}
+    >
       <canvas
         id="output"
         ref={canvasElem}

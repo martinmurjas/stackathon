@@ -1,0 +1,48 @@
+#WelcomePage {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+}
+
+#welcomeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 55rem;
+}
+
+#heading {
+  color: white;
+}
+
+#heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#heading h1 > span {
+  font-family: "Lobster", cursive;
+  font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem rgba(255, 0, 0, 0.3);
+}
+
+#heading p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+#heading h3 {
+  text-align: center;
+  color: rgb(162, 238, 162);
+}

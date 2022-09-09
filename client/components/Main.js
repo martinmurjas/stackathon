@@ -7,9 +7,11 @@ import UploadVideo from "./Steps/UploadVideo";
 import SelectStartTime from "./Steps/SelectStartTime";
 import SelectEndTime from "./Steps/SelectEndTime";
 import RunAnalysis from "./Steps/RunAnalysis";
+import grassBackground from "../../public/grassBackground.jpg";
 
 import Canvas from "./Canvas";
-import VideoControls from "./VideoControls";
+
+import "./Main.css";
 
 const Main = ({ video, canvas, createDetector, createCamera }) => {
   const [step, setStep] = useState(1);
@@ -31,13 +33,14 @@ const Main = ({ video, canvas, createDetector, createCamera }) => {
   }, [video.videoElement, canvas]);
 
   return (
-    <div>
-      {step === 1 ? <UploadVideo step={step} setStep={setStep} /> : null}
-      {step === 2 ? <SelectStartTime step={step} setStep={setStep} /> : null}
-      {step === 3 ? <SelectEndTime step={step} setStep={setStep} /> : null}
-      {step === 4 ? <RunAnalysis step={step} setStep={setStep} /> : null}
-      <VideoControls />
-      <Canvas />
+    <div id="Main" style={{ backgroundImage: `url(${grassBackground})` }}>
+      <div>
+        {step === 1 ? <UploadVideo step={step} setStep={setStep} /> : null}
+        {step === 2 ? <SelectStartTime step={step} setStep={setStep} /> : null}
+        {step === 3 ? <SelectEndTime step={step} setStep={setStep} /> : null}
+        {step === 4 ? <RunAnalysis step={step} setStep={setStep} /> : null}
+        <Canvas />
+      </div>
     </div>
   );
 };

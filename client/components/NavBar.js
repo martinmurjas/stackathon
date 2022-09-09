@@ -5,7 +5,7 @@ import "./NavBar.css";
 
 const NavBar = () => (
   <div id="NavBar">
-    <h1>Stackathon</h1>
+    <h1>Barrel It Up</h1>
     <nav>
       <h3>Home</h3>
       <h3>About</h3>

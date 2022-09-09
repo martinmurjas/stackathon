@@ -1,21 +1,21 @@
 #UploadVideo label {
-  background-color: #e6f7ff;
+  background-color: rgb(179, 235, 179);
   height: 15rem;
+  width: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: dashed 5px rgb(38, 106, 38);
 }
 
 #UploadVideo label > div {
   /* justify-content: space-around; */
-  flex-grow: 0;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
 }
 
 #UploadVideo label > svg {
-  flex-grow: 0;
   margin: 1rem;
   width: 3rem;
   height: 3rem;
@@ -27,6 +27,26 @@
 }
 
 #UploadVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#UploadVideo > h1 > span {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+#UploadVideo > * {
+  margin: 2rem;
+}
+
+#UploadVideo .stepMain {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,23 +3,33 @@ import { connect } from "react-redux";
 import Button from "@mui/material/Button";
 import { setEndTime } from "../../store";
 import "./SelectEndTime.css";
+import baseball from "../../../public/baseball.png";
 
 const SelectEndTime = ({ setEndTime, camera, setStep, step }) => {
+  const onClick = () => {
+    setEndTime(camera.video.currentTime || 0);
+    setStep(step + 1);
+  };
+
   return (
     <div id="SelectEndTime">
-      <h2>Set the end time of the analysis for the video</h2>
-      <p>
-        {`Use the video seek bar to find the moment the batter hits the ball and press the below "Select Time" button`}
-      </p>
-      <Button
-        variant="contained"
-        onClick={() => {
-          setEndTime(camera.video.currentTime || 0);
-          setStep(step + 1);
-        }}
-      >
-        SELECT TIME
-      </Button>
+      <h1>
+        <span>Step 3</span>: Set Analysis End Time
+      </h1>
+      <div className="stepMain">
+        <div className="instructions">
+          <h3>Instructions</h3>
+          <p>
+            Use the video seek bar to find the moment that the batter hits the
+            ball.
+          </p>
+          <p>{`Once found, click the 'Set End Time' button to move on to the next step`}</p>
+        </div>
+      </div>
+      <div className="buttonImage" onClick={onClick}>
+        <img src={baseball} />
+        <h3>SET END TIME</h3>
+      </div>
     </div>
   );
 };
