@@ -8,6 +8,7 @@ import canvas from "./canvas";
 import detector from "./detector";
 import camera from "./camera";
 import poseKeypoints from "./poseKeypoints";
+import scores from "./scores";
 
 const reducer = combineReducers({
   auth,
@@ -16,6 +17,7 @@ const reducer = combineReducers({
   detector,
   camera,
   poseKeypoints,
+  scores,
 });
 const middleware = applyMiddleware(thunkMiddleware, logger);
 const store = createStore(reducer, middleware);
@@ -27,3 +29,4 @@ export * from "./canvas";
 export * from "./detector";
 export * from "./camera";
 export * from "./poseKeypoints";
+export * from "./scores";

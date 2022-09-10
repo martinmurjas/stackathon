@@ -111,3 +111,35 @@
     transform: rotate(450deg);
   }
 }
+
+#RunAnalysis .sideSelection img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#RunAnalysis .sideSelection {
+  display: flex;
+}
+
+#RunAnalysis img.right {
+  transform: scaleX(-1);
+}
+
+#RunAnalysis .sideSelection > div {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+#RunAnalysis .sideSelection > div:hover {
+  margin: 1rem;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+#RunAnalysis h3.left {
+  text-align: right;
+}
