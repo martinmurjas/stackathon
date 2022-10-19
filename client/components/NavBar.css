@@ -19,9 +19,10 @@
   font-family: "Lobster", cursive;
 }
 
-#NavBar h3 {
+#NavBar a {
   font-size: 1.3rem;
   font-weight: 200;
+  color: white;
 }
 
 #NavBar nav > * {
