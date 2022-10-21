@@ -1,24 +1,21 @@
 import React from "react";
 import background from "../../public/backgroundWebOptimized.jpg";
-import fieldBackground from "../../public/field_background.png";
 import NavBar from "./NavBar";
-import "./WelcomePage.css";
+import "./css/WelcomePage.css";
+import {GoArrowDown} from 'react-icons/go'
+import { ComparisonImages } from "./ComparisonImages";
 
 const WelcomePage = () => {
   return (
-    <div id="WelcomePage" style={{ backgroundImage: `url(${background})` }}>
+    // <div id="WelcomePage" style={{ backgroundImage: `url(${background})` }}>
+    <div id="WelcomePage" >
       <NavBar />
       <div id="welcomeMain">
         <div id="heading">
-          <h1>
-            Welcome to <span>Barrel It Up!</span>
-          </h1>
-          <p>
-            Here at Barrel It Up we are using tech to help you visualize
-            deficiencies in your swing and give you some actionable tips to get
-            your swing to the next level
-          </p>
-          <h3>See how your swing stacks up below!</h3>
+          <h1>Volleyball Analysis!</h1>
+          <p>Upload your videos/photos to find out how to improve!</p>
+          <ComparisonImages/>
+          <GoArrowDown size={'7rem'}/>
         </div>
       </div>
     </div>

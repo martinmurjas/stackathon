@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  /* color: white; */
   box-sizing: border-box;
   /* font-family: "Lobster", cursive; */
 }
@@ -22,7 +22,7 @@
 #NavBar a {
   font-size: 1.3rem;
   font-weight: 200;
-  color: white;
+  /* color: white; */
 }
 
 #NavBar nav > * {

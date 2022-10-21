@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import "./css/NavBar.css";
 
 const NavBar = () => (
   <div id="NavBar">
-    <h1>Barrel It Up</h1>
+    <h1>VA</h1>
     <nav>
       <NavLink to='/#/'>Home</NavLink>
       <NavLink to='/#/about'>About</NavLink>
