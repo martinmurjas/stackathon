@@ -1,59 +1,32 @@
-# FS-App-Template
+# Barrel It Up
 
-## Setup
+Barrel It Up is a web application that utilizes pose estimation technology to provide feedback on the mechanics of a baseball or softball swing. Users can upload a video of themselves taking a swing, and the application uses TensorFlow's MoveNet models to determine the position of 17 keypoints (joints or body parts) in the video. Based on this analysis, the application provides feedback on various aspects of the swing, such as posture, balance, and hip rotation. This can help users identify areas for improvement and make adjustments to their technique.
 
-- just clone this
-- rm -rf .git
-- git init
-- git add .
-- git commit -m 'first commit'
-- set up origin on github
+## Features
 
+- Allows users to upload a video of their baseball or softball swing
+- Analyzes the swing using pose estimation
+- Measures the key body points through the swing to measure mechanics
+- Provides feedback based on fundamentals vs analyszed mechanics, such as posture and balance
 
-## Customize
+## Technologies Used
 
-Now that you've got the code, follow these steps to get acclimated:
+- TensorFlow
+- Pose Estimation (MoveNet) models
+- Canvas
 
-* Update project name and description in `package.json`, this is your database
+## Installation
 
+1. Clone the repository: `git clone https://github.com/martinmurjas/barrel-it-up.git`
+2. Install the required dependencies: `npm install`
+3. Start the application: `npm run start`
 
-## Start
+## Usage
 
-Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
+1. Upload a video of yourself taking a baseball or softball swing
+2. Scroll through the video until the point of the beginning of the swing (as the leading foot touches the ground following the leg kick). Select this as the starting point
+3. Similarly, find the point in the video where the bat makes contact with the ball and select this as the ending point
+4. Choose which side of the plate you are taking the swing from (right or left)
+5. Click start to begin the analysis
 
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
-
-
-### Heroku
-
-1.  Set up the [Heroku command line tools][heroku-cli]
-2.  `heroku login`
-3.  Add a git remote for heroku:
-
-[heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
-
-* **If you are creating a new app...**
-
-  1.  `heroku create` or `heroku create your-app-name` if you have a
-      name in mind.
-  2.  `heroku config:set JWT=<your secret here!>` to set a secret for JWT signing
-
-Database Setup
-
-  3.  `heroku addons:create heroku-postgresql:hobby-dev` to add
-      ("provision") a postgres database to your heroku dyno (This creates your production database)
-
-  4.  `heroku config:set SEED=true` to get heroku to sync and seed your database
-
-  5.   note everytime your app restarts, the database tables will be dropped and re-created. To avoid this you can `config:unset SEED`
-
-
-* **If you already have a Heroku app...**
-
-  1.  `heroku git:remote your-app-name` You'll need to be a
-      collaborator on the app.
-
-
-Now, you should be deployed!
+![BarrelItUpSample](https://user-images.githubusercontent.com/29100253/236710153-a9b18e0b-0701-4cf2-956d-d3f5fd99ee48.gif)
