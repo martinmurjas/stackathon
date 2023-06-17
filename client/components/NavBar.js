@@ -1,29 +1,25 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = () => (
-  <div id="NavBar">
-    <h1>Barrel It Up</h1>
-    <nav>
-      <h3>Home</h3>
-      <h3>About</h3>
-      <h3>How To Use</h3>
-    </nav>
-  </div>
-);
+const NavBar = () => {
+  const navigate = useNavigate();
 
-/**
- * CONTAINER
- */
+  return (
+    <div id="NavBar">
+      <h1>Barrel It Up</h1>
+      <nav>
+        <h3 onClick={() => navigate("/")}>Home</h3>
+        <h3 onClick={() => navigate("/about")}>About</h3>
+        <h3 onClick={() => navigate("/faq")}>How To Use</h3>
+      </nav>
+    </div>
+  );
+};
+
 const mapState = (state) => {
   return state;
 };
-
-// const mapDispatch = (dispatch) => {
-//   return {
-//   };
-// };
 
 export default connect(mapState)(NavBar);

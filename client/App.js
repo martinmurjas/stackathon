@@ -1,24 +1,13 @@
 import React from "react";
 
-// import NavbarOrig from "./components/NavbarOrig";
-import Routes from "./Routes";
-import Canvas from "./components/Canvas";
-import Main from "./components/Main";
-import WelcomePage from "./components/WelcomePage";
-import background from "../public/backgroundWebOptimized.jpg";
 import "./App.css";
+import Router from "./components/Router";
 
 const App = () => {
-  console.log(background);
   return (
     <div>
-      <WelcomePage />
-      <Main />
+      <Router />
     </div>
-    // <div>
-    //   <NavbarOrig />
-    //   <Routes />
-    // </div>
   );
 };
 

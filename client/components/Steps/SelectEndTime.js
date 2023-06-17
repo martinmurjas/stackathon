@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import Button from "@mui/material/Button";
 import { setEndTime } from "../../store";
 import "./SelectEndTime.css";
 import baseball from "../../../public/baseball.png";

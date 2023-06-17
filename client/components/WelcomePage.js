@@ -1,12 +1,11 @@
 import React from "react";
 import background from "../../public/backgroundWebOptimized.jpg";
-import fieldBackground from "../../public/field_background.png";
 import NavBar from "./NavBar";
 import "./WelcomePage.css";
 
 const WelcomePage = () => {
   return (
-    <div id="WelcomePage" style={{ backgroundImage: `url(${background})` }}>
+    <div id="backgroundImage" style={{ backgroundImage: `url(${background})` }}>
       <NavBar />
       <div id="welcomeMain">
         <div id="heading">

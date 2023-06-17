@@ -1,7 +1,38 @@
+const skills = {
+  platformsAndTools: ['git', 'Github', 'Gitlab', 'Confluence'],
+  languages: ['Javascript', 'HTML', 'CSS', 'SQL', 'C#', 'VBScript', 'PHP'],
+  frontEnd: ['React', 'React-Query', 'Redux', 'Zustand', 'TailwindCSS', 'MaterialUI'],
+  backEnd: ['Express', 'Node', 'ASP.Net Core', 'RESTful API', 'Postgres', 'Sequelize'],
+}
+
+let currentJob = {
+  title: 'Full Stack Software Developer',
+  company: 'Bloomingdales'
+}
+
+const passions = ['Photography', 'Hiking', 'Sports', 'Education', 'Technology']
+
+
+
+
+
+
+
+const total = skills + currentJob + passions
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState, Fragment } from "react";
 import { connect } from "react-redux";
 import * as tf from "@tensorflow/tfjs-core";
-import Button from "@mui/material/Button";
 import { params } from "../../params";
 import { setKeypoints, setScores } from "../../store";
 import store from "../../store";
