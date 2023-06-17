@@ -1,15 +1,32 @@
 # Barrel It Up
 
-A simple app designed to analyze and grade a person's baseball swing mechanics
+Barrel It Up is a web application that utilizes pose estimation technology to provide feedback on the mechanics of a baseball or softball swing. Users can upload a video of themselves taking a swing, and the application uses TensorFlow's MoveNet models to determine the position of 17 keypoints (joints or body parts) in the video. Based on this analysis, the application provides feedback on various aspects of the swing, such as posture, balance, and hip rotation. This can help users identify areas for improvement and make adjustments to their technique.
 
-### 5 Simple Steps
+## Features
 
-- Upload a video of yourself (or someone else) taking a swing
-  - For best results, video should be
-    - Taken from belt height and perpendicular to the batter's stance and shoulders
-    - Recorded with a high frame rate so the video can be played in slow motion
-    - The ball being hit should be belt high down the middle of the plate (if using a tee, place the tee slightly in front of the plate)
-- Select the starting point for analysis which should be when the front foot touches down onto the ground following the leg kick
-- Select the ending point for analysis which is the moment the bat makes contact with the ball (ball should be slightly in front of home plate)
-- Select which side of the plate the batter is batting from (right vs left)
-- Click the start button for analysis
+- Allows users to upload a video of their baseball or softball swing
+- Analyzes the swing using pose estimation
+- Measures the key body points through the swing to measure mechanics
+- Provides feedback based on fundamentals vs analyszed mechanics, such as posture and balance
+
+## Technologies Used
+
+- TensorFlow
+- Pose Estimation (MoveNet) models
+- Canvas
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/martinmurjas/barrel-it-up.git`
+2. Install the required dependencies: `npm install`
+3. Start the application: `npm run start`
+
+## Usage
+
+1. Upload a video of yourself taking a baseball or softball swing
+2. Scroll through the video until the point of the beginning of the swing (as the leading foot touches the ground following the leg kick). Select this as the starting point
+3. Similarly, find the point in the video where the bat makes contact with the ball and select this as the ending point
+4. Choose which side of the plate you are taking the swing from (right or left)
+5. Click start to begin the analysis
+
+![BarrelItUpSample](https://user-images.githubusercontent.com/29100253/236710153-a9b18e0b-0701-4cf2-956d-d3f5fd99ee48.gif)

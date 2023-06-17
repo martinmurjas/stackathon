@@ -1,7 +1,7 @@
 {
-  "name": "stackathon",
-  "version": "2.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "name": "barrel_it_up",
+  "version": "1.0.0",
+  "description": "Webapp to analyze baseball and softball swing",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -15,10 +15,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@tensorflow-models/pose-detection": "^2.0.0",
-    "@tensorflow/tfjs-backend-webgl": "^3.21.0",
-    "@tensorflow/tfjs-converter": "^3.21.0",
-    "@tensorflow/tfjs-core": "^3.21.0",
+    "@tensorflow-models/pose-detection": "2.0.0",
+    "@tensorflow/tfjs-backend-webgl": "3.21.0",
+    "@tensorflow/tfjs-converter": "3.21.0",
+    "@tensorflow/tfjs-core": "3.21.0",
     "css-loader": "^6.7.1",
     "express": "^4.18.1",
     "file-loader": "^6.2.0",
